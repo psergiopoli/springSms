@@ -1,4 +1,0 @@
-Install 32bit JDK.
-Copy 'win32com.dll' to JDK_HOME\jre\bin.
-Copy 'javax.comm.properties'to to JDK_HOME\jre\lib.
-Copy 'comm.jar'to to JDK_HOME\jre\lib\ext.
