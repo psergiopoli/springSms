@@ -87,7 +87,6 @@ public class ModemService {
 	
 	@org.springframework.stereotype.Service @Transactional
 	public class SMSInNotification implements IInboundMessageNotification {
-		@Override		
 		public void process(AGateway gateway, MessageTypes msgType, InboundMessage msg) {
 			switch (msgType) {
 			case INBOUND:
@@ -106,7 +105,6 @@ public class ModemService {
 	}
 
 	public class OutboundNotification implements IOutboundMessageNotification {
-		@Override
 		public void process(AGateway gateway, OutboundMessage msg) {
 			System.out.println("Outbound handler called from Gateway: " + gateway.getGatewayId());
 			System.out.println(msg);
